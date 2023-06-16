@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+/*Para que se deslice cuando se haga click en una opcion*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*SECCION INICIO*/
+
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#inicio header{
+    width: 100%;
+
+}
+
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+#inicio header .contenido-header .logo{
+    color: #ff8f46;
+    font-size: 22px;
+}
+
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+#inicio header .contenido-header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+
+.nav-responsive{
+    font-size: 25px;
+    color: #a8a8a8;
+    display: none;
+}
+
+#inicio header .contenido-header nav ul li:hover i{
+    color: #ff8f46;
+}
+
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-color: #ff8f46;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/*CARRUSEL*/
+
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+
+#inicio .carrusel .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+
+#inicio .carrusel .info button{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+
+#inicio .gallery-cell{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*SECCION SABORES*/
+
+#sabores{
+    padding: 50px 0;
+}
+
+#sabores h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#sabores .fila{
+    display: flex;     
+    max-width:1100px;
+    margin: auto;
+}
+
+#sabores .fila .item .img{
+    max-width: 80px;
+}
+
+#sabores .fila .item{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+}
+
+#sabores .fila .item:hover{
+    background-color: #ff8f46;
+}
+
+#sabores .fila .item-vegan:hover{
+    background-color: #8ec298;
+}
