@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
 
 *{
     box-sizing: border-box;
@@ -167,10 +167,84 @@ html{
     padding: 5px;
 }
 
+#sabores .fila .item-vegan{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+}
+
+#sabores .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+#sabores .fila .item-vegan .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+#sabores button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+
 #sabores .fila .item:hover{
     background-color: #ff8f46;
 }
 
 #sabores .fila .item-vegan:hover{
     background-color: #8ec298;
+}
+
+/* SECCION VIDEO*/
+
+#video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video h2{
+    font-family:'Poppins';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 16vw;
+    text-align: center;
+    font-weight: 900;
+    line-height: 0.85em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.95);
+    mix-blend-mode: multiply;
+}
+
+#video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#video h2 span{
+    font-size: 0.4em;
 }
